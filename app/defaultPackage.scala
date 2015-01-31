@@ -30,9 +30,6 @@ object Global extends GlobalSettings {
   s ! "Start"
   
   override def onStart(app: Application) {
-    implicit val timeout = Timeout(5.seconds)
-    val future = s ? "Stop"
-    Await.result(future, 5.seconds)
   }  
 
   override def onStop(app: Application) {
