@@ -3,6 +3,7 @@ import akka.actor.ActorSystem
 import akka.actor.Props
 import com.articlio.util.Timelog
 import com.articlio.storage.OutDB
+//import com.articlio.HttpService
 
 object AppActorSystem {
   val system = ActorSystem("app-actor-system")
@@ -10,5 +11,5 @@ object AppActorSystem {
                                               name = "timer-logging-service")
   val outDB = AppActorSystem.system.actorOf(Props[OutDB], 
       name = "out-DB-service")
-                                                                                          
+      
 }

@@ -32,6 +32,17 @@ object Application extends Controller with Match with slickGenerated.Tables {
 
   println("Application has started")
   
+  def bulk = Action { implicit request =>
+    import com.articlio.Bulk
+    import com.articlio.input.JATS
+    import com.articlio.util.runID
+    
+    val bulk = new com.articlio.Bulk((new runID).id)
+    bulk.alleLife
+    Ok(s"finished bulk operation")
+  }
+
+  
   def index = Action { implicit request =>
     println()
     Ok(s"app is up, got request [$request]")

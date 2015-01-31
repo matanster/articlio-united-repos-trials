@@ -11,18 +11,20 @@ import com.articlio.analyze._
 
 object Boot /* extends App */ {
 
-  Monitor
-
-  val i = Indels
+  println("Boot invoked")
   
-  AppActorSystem.outDB ! "createIfNeeded"
+  //Monitor
+
+  //val i = Indels
+  
+  //AppActorSystem.outDB ! "createIfNeeded"
   
   //ldb.ldb.init
 
   //com.articlio.storage.createCSV.go()
-  com.articlio.storage.createAnalyticSummary.go()
+  //com.articlio.storage.createAnalyticSummary.go()
   
-  val httpService = HttpService
+  //val httpService = HttpService
                                               
   // Ultimately something like http://stackoverflow.com/questions/24731242/spray-can-webservice-graceful-shutdown
   // should be used for the following lines of code, as much as skipping them has no ecosystemic side effects:

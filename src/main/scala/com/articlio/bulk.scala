@@ -17,7 +17,6 @@ class Bulk(runID: String) {
       }
     }) 
   }
-
   def allPDF = processAll(runID, config.pdf, Some("pdf-converted"))
   def alleLife = processAll(runID, config.eLife)
   

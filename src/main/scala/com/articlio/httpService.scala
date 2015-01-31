@@ -43,12 +43,6 @@ trait MyService extends HttpService {
         }
       } ~
       path("semantic") {
-        parameter('inputFile) { inputFile =>
-      	  complete(ldb.ldb.go("SingleFileRun" + "-" + (new runID).id, new JATS(s"${config.pdf}/$inputFile", "pdf-converted")))
-        } ~
-        parameter('eLifeInputFile) { eLifeInputFile =>
-      	  complete(ldb.ldb.go("SingleFileRun" + "-" + (new runID).id, new JATS(s"${config.eLife}/$eLifeInputFile")))
-        } ~       
         parameter('all) { all =>
           val bulk = new Bulk((new runID).id)
           bulk.all
@@ -77,6 +71,7 @@ trait MyService extends HttpService {
     }
 }
 
+//import com.articlio.AppActorSystem
 object HttpService {
 
   // ActorSystem for spray
@@ -87,7 +82,15 @@ object HttpService {
 
   implicit val timeout = Timeout(6000.seconds)
   
-  // start http listener
-  IO(Http) ? Http.Bind(service, interface = "localhost", port = 3001)
+  val serviceManager = IO(Http) 
  
+  class ShutDowner extends Actor {
+    def receive = {
+      case "Start" => println("got start messageeeeeeeeeeeeeeeeee"); serviceManager ! Http.Bind(service, interface = "localhost", port = 3001)
+      case "Stop" => println("got stop messageeeeeeeeeeeeeeeeee"); serviceManager ! Http.Unbind(1.seconds)
+      case Http.Unbound => println("Spray unboundddddddddddddddddddd"); sender() ! "done"
+      case other => println("received unknown message: " + other)
+    }
+  }
 }
+

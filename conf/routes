@@ -17,5 +17,8 @@ GET  /showOriginal/:article  controllers.Application.showOriginal(article: Strin
 # Show admin page
 GET  /admin/                 controllers.Application.adminPage
 
+# spray migration
+GET  /bulk/                  controllers.Application.bulk
+
 # Map the JS resource paths - is this really still relevant?!
 GET  /*file                  controllers.Assets.versioned(path="/public", file: Asset)

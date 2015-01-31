@@ -1,0 +1,126 @@
+Script started on Sat 31 Jan 2015 05:25:03 AM IST
+bash: cd: ../../repos/articlio: No such file or directory
+             total       used       free     shared    buffers     cached
+Mem:         32071      12203      19868        109        784       5251
+-/+ buffers/cache:       6167      25904
+Swap:            0          0          0
+]0;matan@matan: /repos/articlio/botched ldb and reporter fusion attemptmatan@matan:/repos/articlio/botched ldb and reporter fusion attempt$ l
+[0m[01;34mapp[0m/  [01;34mbin[0m/  build.sbt  [01;34mconf[0m/  [01;32mheroku.sh[0m*  [01;34mldb[0m/  [01;34mlib[0m/  log.log  [01;34mlogs[0m/  outAnalytic.csv  Procfile  [01;34mproject[0m/  [01;34mpublic[0m/  [01;34mreporter[0m/  [01;34mscript[0m/  [01;34msrc[0m/  [01;34mtarget[0m/  [01;34mtest[0m/  typescript
+]0;matan@matan: /repos/articlio/botched ldb and reporter fusion attemptmatan@matan:/repos/articlio/botched ldb and reporter fusion attempt$ l
+[0m[01;34mapp[0m/  [01;34mbin[0m/  build.sbt  [01;34mconf[0m/  [01;32mheroku.sh[0m*  [01;34mldb[0m/  [01;34mlib[0m/  log.log  [01;34mlogs[0m/  outAnalytic.csv  Procfile  [01;34mproject[0m/  [01;34mpublic[0m/  [01;34mreporter[0m/  [01;34mscript[0m/  [01;34msrc[0m/  [01;34mtarget[0m/  [01;34mtest[0m/  typescript
+]0;matan@matan: /repos/articlio/botched ldb and reporter fusion attemptmatan@matan:/repos/articlio/botched ldb and reporter fusion attempt$ sciprt/[K[K[K[K[K[K[Kgit status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	[31mmodified:   app/controllers/Application.scala[m
+	[31mmodified:   app/defaultPackage.scala[m
+	[31mmodified:   app/models/Models.scala[m
+	[31mmodified:   app/views/showExtract.scala.html[m
+	[31mmodified:   conf/routes[m
+	[31mmodified:   project/plugins.sbt[m
+	[31mmodified:   src/main/scala/com/articlio/AppActorSystem.scala[m
+	[31mmodified:   src/main/scala/com/articlio/Boot.scala[m
+	[31mmodified:   src/main/scala/com/articlio/bulk.scala[m
+	[31mmodified:   src/main/scala/com/articlio/httpService.scala[m
+	[31mmodified:   src/main/scala/com/articlio/ldb/patterns.scala[m
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	[31mldb/[m
+	[31mreporter/[m
+	[31mtypescript[m
+
+no changes added to commit (use "git add" and/or "git commit -a")
+]0;matan@matan: /repos/articlio/botched ldb and reporter fusion attemptmatan@matan:/repos/articlio/botched ldb and reporter fusion attempt$ git remote v[K-v
+origin	git@github.com:matanster/articlio.git (fetch)
+origin	git@github.com:matanster/articlio.git (push)
+]0;matan@matan: /repos/articlio/botched ldb and reporter fusion attemptmatan@matan:/repos/articlio/botched ldb and reporter fusion attempt$ scrip[K[K[K[K[K../gitit.sh ''[K[K
+[1;34m
+Trying to stage and commit all changes
+[1;30m
+On branch master
+Your branch is up-to-date with 'origin/master'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	[31mmodified:   app/controllers/Application.scala[m
+	[31mmodified:   app/defaultPackage.scala[m
+	[31mmodified:   app/models/Models.scala[m
+	[31mmodified:   app/views/showExtract.scala.html[m
+	[31mmodified:   conf/routes[m
+	[31mmodified:   project/plugins.sbt[m
+	[31mmodified:   src/main/scala/com/articlio/AppActorSystem.scala[m
+	[31mmodified:   src/main/scala/com/articlio/Boot.scala[m
+	[31mmodified:   src/main/scala/com/articlio/bulk.scala[m
+	[31mmodified:   src/main/scala/com/articlio/httpService.scala[m
+	[31mmodified:   src/main/scala/com/articlio/ldb/patterns.scala[m
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	[31mldb/[m
+	[31mreporter/[m
+	[31mtypescript[m
+
+no changes added to commit (use "git add" and/or "git commit -a")
+On branch master
+Your branch is up-to-date with 'origin/master'.
+
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	[32mmodified:   app/controllers/Application.scala[m
+	[32mmodified:   app/defaultPackage.scala[m
+	[32mmodified:   app/models/Models.scala[m
+	[32mmodified:   app/views/showExtract.scala.html[m
+	[32mmodified:   conf/routes[m
+	[32mnew file:   ldb/target/.history[m
+	[32mnew file:   ldb/target/resolution-cache/default/ldb_2.10/0.1-SNAPSHOT/resolved.xml.properties[m
+	[32mnew file:   ldb/target/resolution-cache/default/ldb_2.10/0.1-SNAPSHOT/resolved.xml.xml[m
+	[32mnew file:   ldb/target/resolution-cache/reports/default-ldb_2.10-compile-internal.xml[m
+	[32mnew file:   ldb/target/resolution-cache/reports/default-ldb_2.10-compile.xml[m
+	[32mnew file:   ldb/target/resolution-cache/reports/default-ldb_2.10-docs.xml[m
+	[32mnew file:   ldb/target/resolution-cache/reports/default-ldb_2.10-optional.xml[m
+	[32mnew file:   ldb/target/resolution-cache/reports/default-ldb_2.10-plugin.xml[m
+	[32mnew file:   ldb/target/resolution-cache/reports/default-ldb_2.10-pom.xml[m
+	[32mnew file:   ldb/target/resolution-cache/reports/default-ldb_2.10-provided.xml[m
+	[32mnew file:   ldb/target/resolution-cache/reports/default-ldb_2.10-runtime-internal.xml[m
+	[32mnew file:   ldb/target/resolution-cache/reports/default-ldb_2.10-runtime.xml[m
+	[32mnew file:   ldb/target/resolution-cache/reports/default-ldb_2.10-scala-tool.xml[m
+	[32mnew file:   ldb/target/resolution-cache/reports/default-ldb_2.10-sources.xml[m
+	[32mnew file:   ldb/target/resolution-cache/reports/default-ldb_2.10-test-internal.xml[m
+	[32mnew file:   ldb/target/resolution-cache/reports/default-ldb_2.10-test.xml[m
+	[32mnew file:   ldb/target/resolution-cache/reports/ivy-report.css[m
+	[32mnew file:   ldb/target/resolution-cache/reports/ivy-report.xsl[m
+	[32mnew file:   ldb/target/streams/$global/$global/$global/streams/out[m
+	[32mnew file:   ldb/target/streams/$global/dependencyPositions/$global/streams/update_cache_2.10/input_dsp[m
+	[32mnew file:   ldb/target/streams/$global/dependencyPositions/$global/streams/update_cache_2.10/output_dsp[m
+	[32mnew file:   ldb/target/streams/$global/ivyConfiguration/$global/streams/out[m
+	[32mnew file:   ldb/target/streams/$global/ivySbt/$global/streams/out[m
+	[32mnew file:   ldb/target/streams/$global/projectDescriptors/$global/streams/out[m
+	[32mnew file:   ldb/target/streams/$global/update/$global/streams/out[m
+	[32mnew file:   ldb/target/streams/$global/update/$global/streams/update_cache_2.10/inputs[m
+	[32mnew file:   ldb/target/streams/$global/update/$global/streams/update_cache_2.10/output[m
+	[32mnew file:   ldb/target/streams/compile/$global/$global/discoveredMainClasses/data[m
+	[32mnew file:   ldb/target/streams/compile/compile/$global/streams/export[m
+	[32mnew file:   ldb/target/streams/compile/compile/$global/streams/out[m
+	[32mnew file:   ldb/target/streams/compile/dependencyClasspath/$global/streams/export[m
+	[32mnew file:   ldb/target/streams/compile/externalDependencyClasspath/$global/streams/export[m
+	[32mnew file:   ldb/target/streams/compile/internalDependencyClasspath/$global/streams/export[m
+	[32mnew file:   ldb/target/streams/compile/managedClasspath/$global/streams/export[m
+	[32mnew file:   ldb/target/streams/compile/unmanagedClasspath/$global/streams/export[m
+	[32mnew file:   ldb/target/streams/compile/unmanagedJars/$global/streams/export[m
+	[32mmodified:   project/plugins.sbt[m
+	[32mnew file:   reporter/target/.history[m
+	[32mnew file:   reporter/target/resolution-cache/reporter/reporter_2.11/1.0-SNAPSHOT/resolved.xml.properties[m
+	[32mnew file:   reporter/target/resolution-cache/reporter/reporter_2.11/1.0-SNAPSHOT/resolved.xml.xml[m
+	[32mnew file:   reporter/target/resolution-cache/reports/ivy-report.css[m
+	[32mnew file:   reporter/target/resolution-cache/reports/ivy-report.xsl[m
+	[32mnew f
